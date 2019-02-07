@@ -51,6 +51,7 @@ inline CArray_int::CArray_int(int s)
 	if(size>=0) 
 	{
 		size = s;
+    		ptr = new int[size];
 		for(i=0;i<size;i++)
 			ptr[i]=0;
 	}
